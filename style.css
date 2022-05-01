@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+body, body * {
+    cursor: none;
+}
+body .cursor {
+    position: fixed;
+    background: #2128bd;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -10px 0 0 -10px;
+    will-change: transform;
+    user-select: none;
+    pointer-events: none;
+    z-index: 100;
+}
+body .shapes {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #2128bd;
+    overflow: hidden;
+}
+body .shape {
+    will-change: transform;
+    position: absolute;
+    border-radius: 50%;
+}
+body .shape.shape-1 {
+    background: #005ffe;
+    width: 650px;
+    height: 650px;
+    margin: -325px 0 0 -325px;
+}
+body .shape.shape-2 {
+    background: #ffe5e3;
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+}
+body .shape.shape-3 {
+    background: #ffcc67;
+    width: 270px;
+    height: 270px;
+    margin: -135px 0 0 -135px;
+}
+body .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    mix-blend-mode: screen;
+}
+body h1 {
+    color: black;
+    margin: 0;
+    font-size: 8em;
+    user-select: none;
+}
+*{
+    caret-color: rgba(255, 255, 255, 0);
+
+}
+body h1 span{
+    color: rgb(212, 54, 1);
+    mix-blend-mode:multiply;
+}
